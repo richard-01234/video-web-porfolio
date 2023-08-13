@@ -10,8 +10,8 @@
 }
 
 :root{
-    --text-color: #fdfdfd;
-    --bg-color: black;
+    --text-color: black;
+    --bg-color: #fdfdfd;;
 }
 
 html,h2,h3,h4,h5,h6,a{
@@ -420,9 +420,9 @@ body{
 
 
 .lightmode{
-    background-color: white;
-    --text-color: black;
-    --bg-color: white;
+    background-color: black;
+    --text-color: #fdfdfd;;
+    --bg-color: black;
 }
 
 
