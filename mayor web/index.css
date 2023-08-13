@@ -10,8 +10,8 @@
 }
 
 :root{
-    --text-color: black;
-    --bg-color: #fdfdfd;;
+    --text-color: #fdfdfd;
+    --bg-color: black;
 }
 
 html,h2,h3,h4,h5,h6,a{
@@ -75,7 +75,6 @@ header.sticky{
 body{
     width: 100%;
     overflow-x: hidden;
-    background: var(--bg-color)
 }
 
    .header{
@@ -269,7 +268,7 @@ body{
     position: relative; 
     color: var(--text-color);
 }
-#reels iframe{    
+#reels video{    
     width: 100%;
     height: 40rem;
     object-fit: cover;
@@ -311,13 +310,6 @@ body{
        html,body{
         overflow-x: hidden;
        }
-    #reels iframe{    
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 10px;
-
-}
 
        .portfolio video{
         height: 13rem;
@@ -381,7 +373,7 @@ body{
     display: none;
     position: fixed;
     background-color: white;
-    width: 85%;
+    width: 50%;
     height: 15rem;
     top: 5rem;
     left: 0;
@@ -421,9 +413,9 @@ body{
 
 
 .lightmode{
-    background-color: black;
-    --text-color: #fdfdfd;;
-    --bg-color: black;
+    background-color: white;
+    --text-color: black;
+    --bg-color: white;
 }
 
 
