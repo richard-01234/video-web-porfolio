@@ -67,45 +67,41 @@ header.sticky{
 
 
 #Darkmode-icon{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: var(--text-color);
     cursor: pointer;
     margin-right: .3rem;
 }
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 
    .header{
     background-color: var(--bg-color);
-    background-attachment: fixed;
-    width: 100%;
+    display: flex;
+    align-items: center;
     height: 90vh;
-    background-repeat: no-repeat;
-   
-    background-size: 100%,100%;
+    justify-content: center;
    }
 
    .description{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    padding: 2em;
+    text-align: center;
     
 }
 .description h1{
  color: var(--text-color);
  font-family: Arial, Helvetica, sans-serif;
  font-weight: 600;
- font-size: 4em;
+ font-size: 50px;
 }
 .description p{
  color: var(--text-color);
  font-size: 1.5em;
- text-align: center;
-margin-left: -2rem; 
-margin-top: 2em;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin-top: 1em;
+ font-family: Adobe Hebrew;
  width: 100%;
- font-weight: 400;
- line-height: 1.5;
+ line-height: 18px;
 }
 
 .find a{
@@ -115,16 +111,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     margin: 2rem;
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: black;
     transition: .5s ease;
 }
 
-.find{
-    text-align: center;
-    position: absolute;
-    bottom: -18rem;
-    left: 35%;
-}
 
 .find a:hover{
     transform: scale(1.1);
@@ -152,8 +142,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    .about span{
     display: block;
     color: var(--text-color);
-    position: absolute;
-    
+    position: absolute;  
     left: 115px;
    
    }
@@ -176,7 +165,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
   
    .portfolio{
-       margin: 4em 0;
+       
        position: relative; 
    }
    .portfolio h1{
@@ -189,6 +178,11 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      margin: 1em;
      object-fit: cover;
      border-radius: 10px;
+     border: 0;
+   }
+   .portfolio a{
+    display: block;
+    text-decoration: none;
    }
 
    .contact-form{
@@ -228,30 +222,14 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
    }
    
-   @media screen and (max-width: 780px) {
-    .description h1{
-        margin-left: -7.5rem;
-        font-size: 1.8rem;
-        font-weight: 900;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 200%;
 
-    }
-    .description p{
-        font-size: 0.9rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        width: 150%;
-        display: flex;
-        margin-left: -5rem;
-    }
-    .header{
-        background-color: var(--bg-color);
-        background-attachment: fixed;
+    body{
+        margin: 0;
+        padding: 0;
         width: 100%;
-        height: 90vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-       }
+    }
+
+    
        .about h3{
         color: white;
         font-size: 25px;
@@ -274,14 +252,13 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 10px;
       }
 
-   }
 
    body{
     overflow-y: scroll;
-   -ms-overflow-style: none;
-   scrollbar-width: none;
-   background-color:#131111;
-   color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color:#131111;
+    color: white;
    }
    body::-webkit-scrollbar{
     display: none;
@@ -305,7 +282,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 #menu-icon{
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 24px;
     display: none;
 
 }
@@ -313,40 +290,90 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: none;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
 
+    .description h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .description p{
+        font-size: 12px;
+        font-family: arial;       
+    }
+    
+    .header{
+        background-color: var(--bg-color);
+        background-attachment: fixed;
+        width: 100%;
+        height: 90vh;
+       }
+       html,body{
+        overflow-x: hidden;
+       }
+
+       .portfolio video{
+        height: 13rem;
+        width: 100%;
+        margin-left: 0.2em;
+        overflow-x: hidden;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 0;
+      }
 #menu-icon{
     display: block;
 }
-
+.about .desc h3{
+    color: var(--text-color);
+    font-weight: 600;
+    margin-top: -1.8rem;
+    margin-left: 0.1rem;
+   }
+   .about .move{
+    margin-top: 2.7rem;
+    width: 150%;
+    margin-left: -0.5rem;
+   }
 .navbar{
     display: none;
 }
 
 .end{
     display: flex;
-    margin-left: 18rem;
+    float: left;
+}
+.find{
+    position: absolute;
+    bottom: -40px;
+    left: 100px;
 }
 
 .find a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    color: var(--text-color);
+    color: black;
+    transition: .5s ease;
+    width: 2rem;
+    height: 2rem;
+    border: .2rem solid black;
+    background-color: rgba(0, 0, 0, .8);
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    box-shadow: o .2rem .5rem var(--shadow-color);
+    margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
-.find{
-    margin-left: -5rem;
-}
-
 
 #drop1{
     display: none;
     position: fixed;
     background-color: white;
-    width: 85%;
+    width: 50%;
     height: 15rem;
     top: 5rem;
     left: 0;
@@ -358,15 +385,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #drop1 a{
     text-decoration: none;
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     transition: 0.5s ease;
     
 }
 #Darkmode-icon{
-    font-size: 2rem;
+    color: var(--text-color);
+    font-size:24px;
 }
 
 
@@ -378,6 +407,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2rem;
 
 }
+
 }
 
 
