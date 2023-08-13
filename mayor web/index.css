@@ -75,6 +75,7 @@ header.sticky{
 body{
     width: 100%;
     overflow-x: hidden;
+    background: var(--bg-color)
 }
 
    .header{
