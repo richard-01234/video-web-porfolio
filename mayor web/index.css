@@ -310,6 +310,13 @@ body{
        html,body{
         overflow-x: hidden;
        }
+    #reels iframe{    
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
 
        .portfolio video{
         height: 13rem;
