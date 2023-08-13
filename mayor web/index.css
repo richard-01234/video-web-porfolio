@@ -268,7 +268,7 @@ body{
     position: relative; 
     color: var(--text-color);
 }
-#reels video{    
+#reels iframe{    
     width: 100%;
     height: 40rem;
     object-fit: cover;
