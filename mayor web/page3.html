@@ -21,7 +21,7 @@
             font-family: fantasy;
         }
         
-        .content video{
+        .content iframe{
             height: 40em;
             width: 100%;
             object-fit: cover;
@@ -79,7 +79,7 @@
         }
 
         @media screen and (max-width: 1000px) {
-            .content video{
+            .content iframe{
             height: 15em;
             width: 100%;
             object-fit: cover;
@@ -87,34 +87,37 @@
         .info{
             text-align: justify;
             margin-top: 3em;
-            margin-left: 1em;
+            margin-left: 1.1em;
+            font-size: 16px;
+            font-family: san-serif;
         }
             
         }
         .like{
-            font-size: 25px;
+            font-size: 18px;
+            font-family: san-serif;
+            font-weight: 600;
         }
 
     </style>
 </head>
 <body>
-    <a href="index.html" style="text-decoration: none; list-style: none;"><span style="font-size: 40px; margin-left: 30px; color:white;  font-weight: 700;">&larr;</span></a>
     <div class="head">
-        <h1 class="text-center"> Semah weifur  </h1>
+        <h1 class="text-center" style="margin-top: 2rem;"> Semah weifur  </h1>
     </div>
 
     <div class="container">
         <div class="content">
-            <video poster="thumb_nail/semah weifur story still.png" src="My Projects/Semah Weifur Intro.mp4" controls class="video-fluid"></video>
+            <iframe poster="thumb_nail/semah weifur story still.png" src="https://drive.google.com/uc?export=media&id=1uzUyZL3FodDgZGq_r5LoMoAPMyNJONnv" controls class="iframe-fluid"></iframe>
         </div>       
     </div>
 
     <div class="container">
         <div class="info">
-            video created for youtube channel (hotnaija) <br>
-            this is just the intro, you can watch the full video <a href="https://youtu.be/AJXwgEP6Qts">here</a> <br>
+            Video created for Youtube channel (hotnaija) <br>
+            This is just the intro, you can watch the full video <a href="https://youtu.be/AJXwgEP6Qts">here</a> <br>
 
-            edited & animated by Richard Akinwumi
+            Edited & Animated by Richard Akinwumi
 
         </div>
     </div>
@@ -187,7 +190,7 @@
     
     <script src="https://unpkg.com/scrollreveal"></script> 
     <script>
-         ScrollReveal({
+     /*    ScrollReveal({
            reset: true,
            distance: '80px',
            duration: 1500,
@@ -197,7 +200,7 @@
           
           ScrollReveal().reveal('.head, .like', { origin: 'top' });
           ScrollReveal().reveal('.box , .info ,.content video', { origin: 'bottom' });   
-   
+   */
     </script>      
 </body>
 </html>
