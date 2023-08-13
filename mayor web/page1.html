@@ -21,7 +21,7 @@
             font-family: fantasy;
         }
         
-        .content video{
+        .content iframe{
             height: 40em;
             width: 100%;
             object-fit: cover;
@@ -85,7 +85,9 @@
         .info{
             text-align: justify;
             margin-top: 3em;
-            margin-left: 1em;
+            margin-left: 1.1em;
+            font-size: 16px;
+            font-family: san seriff;
         }
         
 
@@ -93,34 +95,36 @@
             
         }
         .like{
-            font-size: 25px;
+            font-size: 18px;
+            font-family: san-serif;
+            text-align: justify;
+            font-weight: 600;
         }
         body {
             background-color: black;
             color: white;
+            
         }
      
     </style>
 </head>
 <body>
-    <a href="index.html" style="text-decoration: none; list-style: none;"><span class="arrow" style="font-size: 40px; margin-left: 30px; color: white;  font-weight: 700;">&larr;</span></a>
     <div class="head">
-        <h1 class="text-center"> Rema </h1>
+        <h1 class="text-center" style="margin-top: 2rem;"> Rema </h1>
     </div>
 
     <div class="container">
         <div class="content">
-            <video poster="thumb_nail/Rhema still.png" src="My Projects/Rema video first 1 min.mp4" controls class="video-fluid"></video>
+            <iframe poster="thumb_nail/Rhema still.png" src="https://drive.google.com/uc?export=media&id=sdsdsdd/17z_aUXktC-SLuuIiR-HbvTadd1nQJvxV" controls class="iframe-fluid"></iframe>
         </div>       
     </div>
 
     <div class="container">
         <div class="info">
             <p class="text-justify">
-            video created for youtube channel (hotnaija) <br>
-            this is just the intro, you can watch the full video <a href="https://youtu.be/MTRr_6Y0vzY">here</a> <br>
-            edited & animated by Richard Akinwumi
-
+            Video created for Youtube channel (Hotnaija). <br>
+            This is just the intro, you can watch the full video <a href="https://youtu.be/MTRr_6Y0vzY">here</a> <br>
+            Edited & Animated by Richard Akinwumi.
             </p>
             
 
@@ -198,7 +202,7 @@
     </div>
     <script src="https://unpkg.com/scrollreveal"></script> 
  <script>
-      ScrollReveal({
+    /*  ScrollReveal({
         reset: true,
         distance: '80px',
         duration: 1500,
@@ -206,9 +210,8 @@
        });
      
        
-       ScrollReveal().reveal('.head, .like', { origin: 'top' });
-       ScrollReveal().reveal('.box , .info ,.content video', { origin: 'bottom' });   
-
+       ScrollReveal().reveal('.head, .like ,.box , .info ,.content video', { origin: 'top' });
+   */   
  </script>   
 </body>
 </html>
